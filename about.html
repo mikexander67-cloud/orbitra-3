@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Orbitra</title>
+<meta name="description" content="Orbitra is a structured launch agency for early-stage and growing Mauritian businesses. Sits between freelancers and full agencies — defined packages, installments, real handover.">
+<link rel="stylesheet" href="/styles.css">
+<style>
+.about-hero { padding-top: clamp(80px, 10vw, 140px); padding-bottom: clamp(48px, 6vw, 80px); position: relative; overflow: hidden; }
+.about-hero-grid { display: grid; grid-template-columns: 1fr; gap: 56px; align-items: end; }
+@media (min-width: 1024px) { .about-hero-grid { grid-template-columns: 1.4fr 1fr; gap: 80px; } }
+.about-hero h1 { margin-bottom: 24px; }
+.about-hero .lead { max-width: 56ch; }
+.signature-mark { width: 100%; max-width: 280px; height: auto; margin-left: auto; display: block; }
+.signature-mark circle, .signature-mark path { transform-origin: center; }
+.signature-mark .ring-1 { animation: spin-slow 40s linear infinite; }
+.signature-mark .ring-2 { animation: spin-slow 60s linear infinite reverse; }
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+
+.philosophy-grid { display: grid; grid-template-columns: 1fr; gap: 32px; }
+@media (min-width: 800px) { .philosophy-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; } }
+.philosophy-item { padding-top: 24px; border-top: 1px solid var(--color-border); position: relative; }
+.philosophy-item::before { content: ''; position: absolute; top: -1px; left: 0; width: 36px; height: 2px; background: var(--color-primary); }
+.philosophy-item h3 { margin-bottom: 12px; }
+.philosophy-item p { color: var(--color-text); }
+.philosophy-item p + p { margin-top: 12px; }
+
+.compare-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: var(--radius-md); }
+.compare-table .col-orbitra { background: var(--color-primary-soft); }
+.compare-table .col-orbitra-head { background: var(--color-primary); color: var(--color-bg); }
+.compare-table td.first-col { font-family: var(--font-ui); font-size: 0.8125rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.06em; width: 22%; min-width: 160px; }
+.compare-table td { font-size: 0.9375rem; line-height: 1.55; }
+
+.fit-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+@media (min-width: 800px) { .fit-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; } }
+.fit-card { padding: 28px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); }
+.fit-card.not-fit { background: var(--color-surface); }
+.fit-card h3 { margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.fit-icon { width: 28px; height: 28px; flex-shrink: 0; }
+.fit-card ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.fit-card li { padding-left: 22px; position: relative; font-size: 0.9375rem; line-height: 1.55; }
+.fit-card.fit li::before { content: ''; position: absolute; left: 0; top: 0.55em; width: 8px; height: 8px; border-radius: 50%; background: var(--color-secondary); }
+.fit-card.not-fit li::before { content: ''; position: absolute; left: 0; top: 0.75em; width: 12px; height: 1.5px; background: var(--color-muted); }
+
+.cta-final { padding: clamp(56px, 7vw, 96px) 0; }
+.cta-final-inner { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: clamp(40px, 5vw, 64px); position: relative; overflow: hidden; }
+.cta-final-inner .mesh-bg { opacity: 0.6; }
+.cta-final-content { position: relative; z-index: 1; max-width: 640px; }
+.cta-final-content h2 { margin-bottom: 16px; }
+.cta-final-content p { color: var(--color-muted); margin-bottom: 28px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand" aria-label="Orbitra home">
+      <img src="https://orbitravtwo.vercel.app/logo_test.svg" alt="Orbitra logo">
+      <span class="brand-text">
+        <span class="brand-name">Orbitra</span>
+        <span class="brand-tag">Launch packages for Mauritian businesses</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/packages.html">Packages</a>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a class="btn btn-primary nav-cta" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your launch audit <span class="arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+  </div>
+  <div class="container mobile-menu" aria-label="Mobile">
+    <a href="/">Home</a>
+    <a href="/packages.html">Packages</a>
+    <a href="/about.html">About</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your launch audit</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="about-hero section-relative">
+    <div class="mesh-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="about-hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">About Orbitra</span>
+          <h1>A structured way to launch, built for where you actually are.</h1>
+          <p class="lead">Orbitra sits between the freelancer who disappears and the agency you can't afford. We sell launch readiness — the website, the brand, the first month of social — as defined packages, with installments, and a real handover.</p>
+        </div>
+        <div class="reveal" aria-hidden="true">
+          <svg class="signature-mark" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="140" cy="140" r="120" stroke="#C9C2B0" stroke-width="1"/>
+            <g class="ring-1">
+              <circle cx="140" cy="140" r="90" stroke="#2F7CAB" stroke-width="1" stroke-dasharray="4 8"/>
+              <circle cx="140" cy="50" r="5" fill="#2F7CAB"/>
+            </g>
+            <g class="ring-2">
+              <circle cx="140" cy="140" r="58" stroke="#C4634A" stroke-width="1"/>
+              <circle cx="198" cy="140" r="4" fill="#C4634A"/>
+            </g>
+            <circle cx="140" cy="140" r="6" fill="#2C2A26"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">Our philosophy</span>
+        <h2>Four ideas the studio is built on.</h2>
+        <p>None of these are clever. They're just what's missing from how most small businesses get launched online in Mauritius.</p>
+      </div>
+      <div class="philosophy-grid stagger reveal">
+        <div class="philosophy-item">
+          <h3>Packages, not quotes.</h3>
+          <p>Custom quotes hide the real cost and the real timeline. We publish prices, deliverables, and what's not included. You read the page, you know what you're buying.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3>Installments that match milestones.</h3>
+          <p>Deposit to start. Balance over two to three payments tied to delivery, not the calendar. Paid via MCB Juice or bank transfer — the way Mauritian businesses already move money.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3>Handover is the deliverable.</h3>
+          <p>Every launch ends with full admin access, a usage manual, and recorded training calls. You leave knowing how to run the thing we built. Care Plan is optional, never a lock-in.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3>Calm beats clever.</h3>
+          <p>No urgency tactics. No popups. No vague promises. One conversion path — the launch audit — and clear answers when you ask questions. That's the whole model.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">Where we sit</span>
+        <h2>Freelancer, Orbitra, or full agency.</h2>
+        <p>Three real options for a small Mauritian business getting its digital foundation in place. Here's how they actually compare.</p>
+      </div>
+      <div class="compare-wrap reveal">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Freelancer</th>
+              <th class="col-orbitra-head">Orbitra</th>
+              <th>Full agency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="first-col">Pricing</td>
+              <td>Per-hour or vague quote. Often grows.</td>
+              <td class="col-orbitra">Fixed package, published price.</td>
+              <td>Custom proposal. Usually six figures+.</td>
+            </tr>
+            <tr>
+              <td class="first-col">Payment</td>
+              <td>Cash, Juice, or transfer. Varies.</td>
+              <td class="col-orbitra">Deposit + installments via Juice or bank transfer.</td>
+              <td>Invoice cycles, retainers, card processors.</td>
+            </tr>
+            <tr>
+              <td class="first-col">Scope</td>
+              <td>Whatever was discussed in WhatsApp.</td>
+              <td class="col-orbitra">Defined deliverables in writing before work starts.</td>
+              <td>Bespoke, often expanding.</td>
+            </tr>
+            <tr>
+              <td class="first-col">Timeline</td>
+              <td>"Soon." Sometimes months late.</td>
+              <td class="col-orbitra">30 to 75 days, milestone-based.</td>
+              <td>Three to six months minimum.</td>
+            </tr>
+            <tr>
+              <td class="first-col">Handover</td>
+              <td>You may or may not get the logins.</td>
+              <td class="col-orbitra">Full admin access, manual, training calls.</td>
+              <td>Often locked behind ongoing retainer.</td>
+            </tr>
+            <tr>
+              <td class="first-col">After launch</td>
+              <td>Hard to reach. Pays-as-you-go.</td>
+              <td class="col-orbitra">Optional Care Plan or one-off support at Rs 1,500/hour.</td>
+              <td>Monthly retainer required.</td>
+            </tr>
+            <tr>
+              <td class="first-col">Best for</td>
+              <td>Smallest budgets, comfortable taking risk.</td>
+              <td class="col-orbitra">Early-stage and growing businesses launching properly.</td>
+              <td>Established brands with budget and complexity.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-label">Who we work with</span>
+        <h2>A clear fit, both ways.</h2>
+        <p>The packages work best when the business is ready for them. They don't work for everyone — and that's worth saying out loud.</p>
+      </div>
+      <div class="fit-grid reveal">
+        <div class="fit-card fit">
+          <h3>
+            <svg class="fit-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#2F7CAB" stroke-width="1.5"/><path d="M7 12.5l3 3 7-7" stroke="#2F7CAB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            A good fit if you are
+          </h3>
+          <ul>
+            <li>An early-stage or growing Mauritian business launching your first real digital presence.</li>
+            <li>A service operator, small product brand, or owner-operator with a focused offer.</li>
+            <li>Cash-conscious but ready to invest if the scope and timeline are clear.</li>
+            <li>Open to handholding and education, not just deliverables dumped over the fence.</li>
+            <li>Comfortable paying a deposit upfront via MCB Juice or bank transfer.</li>
+          </ul>
+        </div>
+        <div class="fit-card not-fit">
+          <h3>
+            <svg class="fit-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#6E6A60" stroke-width="1.5"/><path d="M8 8l8 8M16 8l-8 8" stroke="#6E6A60" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Not a fit if you want
+          </h3>
+          <ul>
+            <li>Highly experimental creative direction or fully bespoke work outside the defined packages.</li>
+            <li>An undefined business idea figured out during the build.</li>
+            <li>Unlimited revisions or open-ended scope.</li>
+            <li>To pay only on delivery, with no deposit.</li>
+            <li>A high-end consultancy or a generic creative agency relationship.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <div class="container">
+      <div class="cta-final-inner reveal">
+        <div class="mesh-bg" aria-hidden="true"></div>
+        <div class="cta-final-content">
+          <span class="eyebrow">Ready when you are</span>
+          <h2>See which package fits.</h2>
+          <p>The launch audit is a short structured form — about five minutes. We come back within 48 hours with a recommendation, a timeline, and a price.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your launch audit <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="/packages.html">See packages</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="/" class="brand" style="margin-bottom:16px;">
+          <img src="https://orbitravtwo.vercel.app/logo_test.svg" alt="Orbitra logo">
+          <span class="brand-text">
+            <span class="brand-name">Orbitra</span>
+            <span class="brand-tag">Launch packages for Mauritian businesses</span>
+          </span>
+        </a>
+        <p style="max-width:38ch;color:var(--color-muted);font-size:0.9375rem;margin-top:12px;">A structured launch agency for early-stage and growing Mauritian businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/packages.html">Packages</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:contactus@orbitra.mu">contactus@orbitra.mu</a></li>
+          <li><a href="https://wa.me/23058150532" target="_blank" rel="noopener noreferrer">WhatsApp +230 58150532</a></li>
+          <li><a href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your launch audit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Orbitra · Mauritius · <span data-year>2026</span></span>
+      <span>Pay via Juice or bank transfer. No card, no hassle.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
