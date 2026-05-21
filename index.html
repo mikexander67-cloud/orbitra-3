@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbitra — Launch packages for Mauritian businesses</title>
+<meta name="description" content="Orbitra builds the digital foundations small Mauritian businesses need to launch — website, branding, and social, delivered as defined packages.">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .hero-illustration { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+  .hero-illustration svg { width: 88%; height: auto; opacity: 0.95; }
+  .orbit-ring { fill: none; stroke: var(--color-primary); stroke-width: 1; opacity: 0.5; }
+  .orbit-ring-2 { stroke: var(--color-secondary); opacity: 0.35; }
+  .orbit-dot { fill: var(--color-primary); animation: orbit-pulse 3.5s ease-in-out infinite; }
+  .orbit-dot-2 { fill: var(--color-secondary); animation: orbit-pulse 4.5s ease-in-out infinite 0.6s; }
+  @keyframes orbit-pulse { 0%, 100% { r: 5; opacity: 1; } 50% { r: 7; opacity: 0.6; } }
+  .pillar-icon { width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--color-border); border-radius: 50%; background: var(--color-surface); margin-bottom: 18px; }
+  .pillar-icon svg { width: 20px; height: 20px; stroke: var(--color-primary); fill: none; stroke-width: 1.5; }
+  .pkg-price { display: flex; align-items: baseline; gap: 6px; margin: 4px 0 12px; }
+  .pkg-price small { font-family: var(--font-ui); font-size: 0.8125rem; color: var(--color-muted); }
+  .pkg-meta { font-family: var(--font-ui); font-size: 0.8125rem; color: var(--color-muted); padding-top: 14px; border-top: 1px dashed var(--color-border); }
+  .pkg-care-line { font-family: var(--font-ui); font-size: 0.8125rem; color: var(--color-primary); margin-top: 6px; }
+  .pkg-desc { color: var(--color-muted); font-size: 0.9375rem; }
+  .ongoing-grid { display: grid; gap: 24px; grid-template-columns: 1fr; }
+  @media (min-width: 720px) { .ongoing-grid { grid-template-columns: 1fr 1fr; } }
+  .proof-block { background: var(--color-surface); border: 1px dashed var(--color-border); border-radius: var(--radius-md); padding: clamp(32px, 4vw, 56px); text-align: center; }
+  .proof-block .ui-label { display: inline-block; margin-bottom: 14px; }
+  .care-bundle-line { font-family: var(--font-heading); font-style: italic; color: var(--color-secondary); margin-top: 18px; font-size: 1.0625rem; }
+  .care-foot { color: var(--color-muted); font-size: 0.9375rem; margin-top: 14px; line-height: 1.6; }
+  .section-intro { color: var(--color-muted); max-width: 60ch; margin-top: 10px; }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand site-logo">
+      <img src="https://orbitravtwo.vercel.app/logo_test.svg" alt="Orbitra logo" class="site-logo-img" style="height:36px;width:auto;">
+      <span class="brand-text">
+        <span class="brand-name site-logo-text">Orbitra</span>
+        <span class="brand-tag">Launch packages for Mauritian businesses</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/packages.html">Packages</a>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a class="btn btn-primary nav-cta" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your launch audit <span class="arrow">→</span></a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu"><span></span></button>
+  </div>
+  <div class="mobile-menu container">
+    <a href="/">Home</a>
+    <a href="/packages.html">Packages</a>
+    <a href="/about.html">About</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your launch audit</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero section-relative">
+    <div class="mesh-bg"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">A launch agency for small Mauritian businesses</span>
+          <h1>Launch your business online, properly — with a package built for where you are now.</h1>
+          <p class="lead">Website, branding, and your first month of social, delivered together. Fixed packages, clear deliverables, payments over two to three months. We build it, and we teach you how to use it.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your launch audit <span class="arrow">→</span></a>
+            <a class="btn btn-secondary" href="#packages">See packages</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="mesh-bg"></div>
+          <div class="hero-illustration">
+            <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+              <ellipse class="orbit-ring" cx="200" cy="160" rx="160" ry="60"/>
+              <ellipse class="orbit-ring orbit-ring-2" cx="200" cy="160" rx="110" ry="42" transform="rotate(-12 200 160)"/>
+              <ellipse class="orbit-ring" cx="200" cy="160" rx="70" ry="26" transform="rotate(8 200 160)"/>
+              <circle cx="200" cy="160" r="14" fill="#2C2A26"/>
+              <circle cx="200" cy="160" r="6" fill="#F4F1EA"/>
+              <circle class="orbit-dot" cx="360" cy="160" r="5"/>
+              <circle class="orbit-dot-2" cx="90" cy="160" r="5" transform="rotate(-12 200 160)"/>
+              <circle class="orbit-dot" cx="270" cy="160" r="4" transform="rotate(8 200 160)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">What we do</span>
+        <h2>Three pieces, one launch.</h2>
+        <p>The website, the brand, and the social presence — built together so they work together. All as one package, with payments over two to three months.</p>
+      </div>
+      <div class="grid grid-3 stagger">
+        <article class="card">
+          <span class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 8h18"/><path d="M8 21h8"/></svg>
+          </span>
+          <h3>Website</h3>
+          <p class="pkg-desc">A real site you own — single-page, WordPress, or Shopify — set up on solid hosting with the pages, copy structure, and admin access you need to run it yourself.</p>
+        </article>
+        <article class="card">
+          <span class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16"/></svg>
+          </span>
+          <h3>Branding</h3>
+          <p class="pkg-desc">Logo, colour palette, typography, and a brand guideline — the visual system your website, social, and business cards all share. Defined, documented, yours.</p>
+        </article>
+        <article class="card">
+          <span class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16v10H7l-3 3z"/><circle cx="9" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="13" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="17" cy="11" r="1" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <h3>Social</h3>
+          <p class="pkg-desc">Profiles set up, templates designed, and (in Full and Premium) your first month of posts produced and scheduled — with a handover so you can keep going on your own.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" class="reveal">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Service business packages</span>
+        <h2>Four ways to launch.</h2>
+        <p>Pick the package that fits where your business is now. Every package includes the website, the branding, the social setup, and the training to run it.</p>
+      </div>
+      <div class="grid grid-4 stagger">
+
+        <article class="card">
+          <span class="ui-label">Starter Launch</span>
+          <div class="pkg-price"><span class="price-display">Rs 25,000</span></div>
+          <p class="pkg-desc">A single-page launch site with basic branding and a social starter kit. The fastest way to get a real digital presence live.</p>
+          <ul class="list-clean">
+            <li>Single-page website (Vercel)</li>
+            <li>Logo, 3-colour palette, typography</li>
+            <li>FB + IG profiles, 5 templates</li>
+            <li>2 calls, 1-page manual, 30-day WhatsApp support</li>
+          </ul>
+          <div class="pkg-meta">
+            30 days · Rs 10,000 deposit + Rs 15,000 at handover
+            <div class="pkg-care-line">Care Plan available from Rs 2,667/mo</div>
+          </div>
+          <a class="btn btn-secondary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your audit <span class="arrow">→</span></a>
+        </article>
+
+        <article class="card">
+          <span class="ui-label">Essential Launch</span>
+          <div class="pkg-price"><span class="price-display">Rs 40,000</span></div>
+          <p class="pkg-desc">A 3-page WordPress site for businesses with 2–4 services that need a real multi-page presence — without a full branding system yet.</p>
+          <ul class="list-clean">
+            <li>3-page WordPress (Home, Services, Contact)</li>
+            <li>Logo + variant, 4-colour palette, 1-page guide</li>
+            <li>FB + IG profile assets, no managed posting</li>
+            <li>1 training call, custom guide, 30-day support</li>
+          </ul>
+          <div class="pkg-meta">
+            45 days · Rs 16,000 deposit + Rs 24,000 at handover
+            <div class="pkg-care-line">Care Plan available from Rs 2,667/mo</div>
+          </div>
+          <a class="btn btn-secondary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your audit <span class="arrow">→</span></a>
+        </article>
+
+        <article class="card card-featured">
+          <span class="ui-label">Full Launch</span>
+          <div class="pkg-price"><span class="price-display">Rs 65,000</span></div>
+          <p class="pkg-desc">The complete launch — multi-page WordPress, full branding system, and your first month of social produced and scheduled.</p>
+          <ul class="list-clean">
+            <li>4–6 page WordPress site</li>
+            <li>Full branding + brand guideline PDF</li>
+            <li>1 month of social: 12 posts, calendar, handover</li>
+            <li>4 calls, business manual, 60-day support</li>
+          </ul>
+          <div class="pkg-meta">
+            60 days · Rs 26,000 deposit + 2 × Rs 19,500
+            <div class="pkg-care-line">Care Plan available from Rs 2,667/mo</div>
+          </div>
+          <a class="btn btn-primary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your audit <span class="arrow">→</span></a>
+        </article>
+
+        <article class="card">
+          <span class="ui-label">Premium Launch</span>
+          <div class="pkg-price"><span class="price-display">Rs 95,000</span></div>
+          <p class="pkg-desc">For established businesses scaling reach — a larger site, expanded brand system, social setup, and 30-day post-launch check-in.</p>
+          <ul class="list-clean">
+            <li>7–10 page WordPress site, optional booking</li>
+            <li>Expanded brand system + stationery</li>
+            <li>Social setup + 30-day check-in + video template</li>
+            <li>5 calls, video walkthrough, 90-day support</li>
+          </ul>
+          <div class="pkg-meta">
+            75 days · Rs 38,000 deposit + 2 × Rs 28,500
+            <div class="pkg-care-line">Care Plan available from Rs 2,667/mo</div>
+          </div>
+          <a class="btn btn-secondary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your audit <span class="arrow">→</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Ecommerce packages</span>
+        <h2>Selling products online?</h2>
+        <p>Here's how we set you up on Shopify. Every store ships with Stripe, MIPS, and MCB Juice send-to-mobile configured at checkout for your customers.</p>
+      </div>
+      <div class="grid grid-4 stagger">
+
+        <article class="card">
+          <span class="ui-label">Ecommerce Lite</span>
+          <div class="pkg-price"><span class="price-display">Rs 45,000</span></div>
+          <p class="pkg-desc">A starter Shopify store with up to 10 products, brand colours applied, and Mauritius delivery configured.</p>
+          <ul class="list-clean">
+            <li>1–10 products configured</li>
+            <li>Free theme with brand colours + typography</li>
+            <li>Single delivery zone (Mauritius)</li>
+            <li>Checkout: Stripe, MIPS, MCB Juice send-to-mobile</li>
+            <li>1 training call, 30-day launch support</li>
+          </ul>
+          <div class="disclosure-box">
+            <span class="disclosure-head">Ongoing monthly costs</span>
+            Shopify subscription Rs 1,600/mo, paid directly to Shopify. Care Plan (optional) from Rs 2,667/mo. Total ongoing ≈ Rs 4,267–5,100/mo with Care.
+          </div>
+          <div class="pkg-meta">35 days · Rs 18,000 deposit + Rs 27,000 at handover</div>
+          <a class="btn btn-secondary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your audit <span class="arrow">→</span></a>
+        </article>
+
+        <article class="card">
+          <span class="ui-label">Ecommerce Starter</span>
+          <div class="pkg-price"><span class="price-display">Rs 75,000</span></div>
+          <p class="pkg-desc">A growing catalogue store with theme customisation in your brand language and click-and-collect support.</p>
+          <ul class="list-clean">
+            <li>11–30 products configured</li>
+            <li>Theme customised to brand</li>
+            <li>Mauritius delivery + click-and-collect</li>
+            <li>Checkout: Stripe, MIPS, MCB Juice send-to-mobile</li>
+            <li>1-month launch support</li>
+          </ul>
+          <div class="disclosure-box">
+            <span class="disclosure-head">Ongoing monthly costs</span>
+            Shopify Rs 1,600/mo, paid to Shopify. Care Plan (optional) from Rs 2,667/mo. Total ≈ Rs 4,267–5,100/mo with Care.
+          </div>
+          <div class="pkg-meta">45 days · Rs 30,000 deposit + balance over 2 installments</div>
+          <a class="btn btn-secondary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your audit <span class="arrow">→</span></a>
+        </article>
+
+        <article class="card card-featured">
+          <span class="ui-label">Ecommerce Full</span>
+          <div class="pkg-price"><span class="price-display">Rs 110,000</span></div>
+          <p class="pkg-desc">A serious storefront for active sellers — multiple delivery zones, enhanced theme, and content support for descriptions or photos.</p>
+          <ul class="list-clean">
+            <li>31–100 products configured</li>
+            <li>Multiple delivery zones</li>
+            <li>Enhanced theme customisation</li>
+            <li>Descriptions OR photo optimisation (your pick)</li>
+            <li>Checkout: Stripe, MIPS, MCB Juice send-to-mobile</li>
+          </ul>
+          <div class="disclosure-box">
+            <span class="disclosure-head">Ongoing monthly costs</span>
+            Shopify Rs 1,600/mo, paid to Shopify. Care Plan (optional) from Rs 2,667/mo. Total ≈ Rs 4,267–5,100/mo with Care.
+          </div>
+          <div class="pkg-meta">60 days · Rs 44,000 deposit + balance over 2 installments</div>
+          <a class="btn btn-primary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your audit <span class="arrow">→</span></a>
+        </article>
+
+        <article class="card">
+          <span class="ui-label">Ecommerce Premium</span>
+          <div class="pkg-price"><span class="price-display">Rs 165,000</span></div>
+          <p class="pkg-desc">For complex catalogues — 100+ products or advanced features like subscriptions, configurators, or B2B pricing.</p>
+          <ul class="list-clean">
+            <li>100+ products or complex variants</li>
+            <li>Full content support: descriptions + photos</li>
+            <li>One advanced feature included</li>
+            <li>Checkout: Stripe, MIPS, MCB Juice send-to-mobile</li>
+          </ul>
+          <div class="disclosure-box">
+            <span class="disclosure-head">Ongoing monthly costs</span>
+            Shopify Rs 1,600/mo, paid to Shopify. Care Plan (optional) from Rs 2,667/mo. Total ≈ Rs 4,267–5,100/mo with Care.
+          </div>
+          <div class="pkg-meta">90 days · Rs 66,000 deposit + balance over 2 installments</div>
+          <a class="btn btn-secondary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your audit <span class="arrow">→</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal section-relative">
+    <div class="mesh-bg"></div>
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Care Plan</span>
+        <h2>Keep your site running, on your terms.</h2>
+        <p>The Care Plan keeps your site live, backed up, and quietly maintained — so you can focus on running your business. Optional. Four commitment tiers. Longer commitments save more.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div>
+          <div class="care-table">
+            <div class="care-row">
+              <span class="care-tier">Monthly</span>
+              <span class="care-price">Rs 3,500/mo</span>
+              <span class="care-note">No commitment</span>
+            </div>
+            <div class="care-row">
+              <span class="care-tier">Quarterly</span>
+              <span class="care-price">Rs 9,500/quarter</span>
+              <span class="care-note">≈ Rs 3,167/mo · ~10% savings</span>
+            </div>
+            <div class="care-row">
+              <span class="care-tier">Semi-annual</span>
+              <span class="care-price">Rs 17,500 / 6 mo</span>
+              <span class="care-note">≈ Rs 2,917/mo · ~17% savings</span>
+            </div>
+            <div class="care-row">
+              <span class="care-tier">Annual</span>
+              <span class="care-price">Rs 32,000/year</span>
+              <span class="care-note">≈ Rs 2,667/mo · ~24% savings</span>
+            </div>
+          </div>
+          <p class="care-bundle-line">Bundle the first year with your launch package for Rs 28,000 — saves Rs 4,000 off the annual price.</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom:14px;">What's included</h3>
+          <ul class="list-clean">
+            <li>Hosting, domain, and business email kept active</li>
+            <li>Daily backups and security monitoring</li>
+            <li>Up to 2 minor content updates per month</li>
+            <li>Additional updates at Rs 1,500 each, billed transparently</li>
+            <li>Monthly performance snapshot</li>
+          </ul>
+          <p class="care-foot">Prefer to self-manage? That's fine too. Every package hands over full admin access and a usage guide. One-off support sessions are available at Rs 1,500/hour if you need help later.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Ongoing services</span>
+        <h2>What comes next, when you're ready.</h2>
+        <p>For clients who've completed a launch. Optional, structured, and only when it fits where your business is going.</p>
+      </div>
+      <div class="ongoing-grid stagger">
+        <article class="card">
+          <h3>Ads management</h3>
+          <p class="pkg-desc">Paid acquisition on Meta, run with structure — not guesswork. Three months minimum, then monthly. Ad spend is always separate from the management fee.</p>
+          <ul class="list-clean">
+            <li>Light — Rs 10,000/mo + min Rs 5,000 ad spend</li>
+            <li>Standard — Rs 15,000/mo + min Rs 10,000 ad spend</li>
+            <li>Active — Rs 20,000/mo + min Rs 15,000 ad spend</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Social continuation</h3>
+          <p class="pkg-desc">Extends the social setup month from Full and Premium launches. We keep producing, scheduling, and handing over reports so your presence stays alive.</p>
+          <ul class="list-clean">
+            <li>Light — Rs 12,000/month</li>
+            <li>Standard — Rs 18,000/month</li>
+            <li>Active — Rs 25,000/month</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">How it works</span>
+        <h2>From audit to launch, in five steps.</h2>
+        <p>The same structured path for every project. No surprises, no scope drift.</p>
+      </div>
+      <div class="process-steps stagger">
+        <div class="process-step">
+          <span class="step-num">Step 01</span>
+          <h4>Launch audit</h4>
+          <p>Free, 5-minute structured form. Tell us about your business and where you're stuck.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">Step 02</span>
+          <h4>Recommendation</h4>
+          <p>Within 48 hours, we send back a recommendation and a scope document.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">Step 03</span>
+          <h4>Scope review</h4>
+          <p>We confirm timeline, price, and deliverables together. You ask anything you need to.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">Step 04</span>
+          <h4>Signed and deposit</h4>
+          <p>Sign the scope, pay the deposit via MCB Juice or bank transfer, and work begins.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">Step 05</span>
+          <h4>Build and launch</h4>
+          <p>Milestone-based delivery, training calls, and a clean handover. You go live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Proof</span>
+        <h2>Real work for real Mauritian businesses.</h2>
+        <p>We're documenting case studies as launches complete. Each will live here — the business, the package, what we built, and what changed for them.</p>
+      </div>
+      <div class="proof-block">
+        <span class="ui-label">Case studies in progress</span>
+        <h3 style="margin-bottom:12px;">First launches are wrapping up.</h3>
+        <p style="max-width:52ch;margin:0 auto;color:var(--color-muted);">If you'd like to be one of our early documented launches, the audit is the place to start. We work with a small number of businesses at a time so each one gets full attention.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band reveal">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div>
+          <span class="eyebrow">Ready when you are</span>
+          <h2>Ready to see which package fits?</h2>
+          <p class="lead" style="margin-top:10px;color:var(--color-muted);">It takes about five minutes. No call required to start — just the form.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;">
+          <a class="btn btn-primary" href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Start your launch audit <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="/packages.html">Browse all packages</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="/" class="brand site-logo" style="margin-bottom:16px;">
+          <img src="https://orbitravtwo.vercel.app/logo_test.svg" alt="Orbitra logo" class="site-logo-img" style="height:32px;width:auto;">
+          <span class="site-logo-text">Orbitra</span>
+        </a>
+        <p style="color:var(--color-muted);max-width:42ch;font-size:0.9375rem;">Launch packages for Mauritian businesses. Website, branding, and social — built together, delivered as defined packages.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Site</h5>
+        <ul>
+          <li><a href="/packages.html">Packages</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="https://tally.so/r/gDJ7Zl" target="_blank" rel="noopener noreferrer">Launch audit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:contactus@orbitra.mu">contactus@orbitra.mu</a></li>
+          <li><a href="https://wa.me/23058150532" target="_blank" rel="noopener noreferrer">WhatsApp +230 58150532</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Orbitra · Mauritius · <span data-year>2026</span></span>
+      <span>Payments to Orbitra via MCB Juice or bank transfer.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
